@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div id="mySidenav" class="sidenav">
+		<p class="logo"><span>D</span>-Hydro</p>
+		<a href="#" class="icon-a"><i class="fa fa-dashboard icons"></i>&nbsp;&nbsp;Dashboard</a>
+	</div>
+
+	<div id="main">
+		<div class="head">
+			<div class="col-div-6">
+				<span style="font-size:30px;cursor:pointer; color: #146C94;" class="nav">&#9776; <b> DASHBOARD HYDROLOGY </b> </span>
+				<span style="font-size:30px;cursor:pointer; color: #146C94;" class="nav2">&#9776;<b> DASHBOARD HYDROLOGY </b></span>
+			</div>
+	
+			<div class="col-div-6">
+				<div class="profile">
+					<img src="images/user.png" class="pro-img" />
+					<p>Dimas Pratama <span>JUNIOR PROGRAMER</span></p>
+				</div>
+			</div>
+		</div>
+
+		<main class="main">
+			<div class="main-header">
+				<img src="images/banner01.png">
+			</div>
+	<div class="card-container">
+			<div class="card">
+				<h3>KINERJA PRODUKSI</h3>
+				<div class="card-bg">
+					<div class="column">
+						<div class="column">
+							<div class="overviewcard">
+								<p>DAILY</p>
+								<div class="column">
+									<div class="overviewcard">
+										<p>1.200 MWh</p>
+										<span>Unit 1</span>
+									</div>
+									<div class="overviewcard">
+										<p>1.230 MWh</p>
+										<span>Unit 2</span>
+									</div>
+									<div class="overviewcard">
+										<p>1.024 MWh</p>
+										<span>Unit 3</span>
+									</div>
+								</div>
+								<div class="column">
+									<div class="overviewcard">
+										<p>3.454 MWh</p>
+										<span>TOTAL</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="column">
+							<div class="overviewcard">
+								<p>MONTHLY</p>
+								<br>
+								<div class="column">
+									<div class="overviewcard">
+										<p>103.634 MWh</p>
+										<span>TOTAL</span>
+									</div>
+								</div>
+								<div class="column">
+									<div class="overviewcard">
+										<p>70%</p>
+										<span>PENCAPAIAN</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="overviewcard">
+								<p>YEARLY</p>
+								<br>
+								<div class="column">
+									<div class="overviewcard">
+										<p>1.139.974 MWh</p>
+										<span>TOTAL</span>
+									</div>
+								</div>
+								<div class="column">
+									<div class="overviewcard">
+										<p>73%</p>
+										<span>PENCAPAIAN</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+
+						<div class="column">
+							<div class="overviewcard">
+								<p>DAILY</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="overviewcard">
+								<p>1.200 MWh</p>
+								<span>Unit 1</span>
+							</div>
+						</div>
+
+					</div>
+				</div>	
+			</div>
+
+		
+			
+			<div class="card">
+				<h3>KINERJA OPERASI</h3>
+				<div class="card-bg">
+					<div class="column">
+						<div class="column">
+							<div class="overviewcard">
+								<p>DAILY</p>
+								<div class="column">
+									<div class="overviewcard">
+										<p>1%</p>
+										<span>Unit 1</span>
+									</div>
+									<div class="overviewcard">
+										<p>2%</p>
+										<span>Unit 2</span>
+									</div>
+								</div>
+								<div class="column">
+									<div class="overviewcard">
+										<p>3%</p>
+										<span>TOTAL</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="column">
+							<div class="overviewcard">
+								<p>MONTHLY</p>
+								<br>
+								<div class="column">
+									<div class="overviewcard">
+										<p>75%</p>
+										<span>TOTAL</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="column">
+							<div class="overviewcard">
+								<p>YEARLY</p>
+								<div class="column">
+									<div class="overviewcard">
+										<p>77%</p>
+										<span>TOTAL</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+
+					</div>
+				</div>	
+			</div>
+	</div>		
+			
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(".nav").click(function(){
+			$("#mySidenav").css('width','70px');
+			$("#main").css('margin-left','70px');
+			$(".logo").css('visibility', 'hidden');
+			$(".logo span").css('visibility', 'visible');
+			$(".logo span").css('margin-left', '-10px');
+			$(".icon-a").css('visibility', 'hidden');
+			$(".icons").css('visibility', 'visible');
+			$(".icons").css('margin-left', '-8px');
+			$(".nav").css('display','none');
+			$(".nav2").css('display','block');
+		});
+
+		$(".nav2").click(function(){
+			$("#mySidenav").css('width','200px');
+			$("#main").css('margin-left','200px');
+			$(".logo").css('visibility', 'visible');
+			$(".icon-a").css('visibility', 'visible');
+			$(".icons").css('visibility', 'visible');
+			$(".nav").css('display','block');
+			$(".nav2").css('display','none');
+		});
+	</script>
+</body>
+</html>
